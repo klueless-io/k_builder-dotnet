@@ -1,3 +1,7 @@
+# NOTES
+
+https://softchris.github.io/pages/dotnet-10-commands.html
+
 # K Builder Dotnet
 
 > K Builder Dotnet provides various fluent builders for building dotnet assets, specifically for c#

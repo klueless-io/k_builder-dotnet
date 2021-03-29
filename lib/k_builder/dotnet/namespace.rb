@@ -8,6 +8,13 @@ module KBuilder
     class Namespace
       attr_accessor :namespace
       attr_accessor :dependency
+
+      def initialize(namespace, dependency)
+        @namespace = namespace
+        @dependency = dependency
+
+        raise KBuilder::Dotnet::Error, 'Namespace is required' if namespace.nil? || namespace.to_s == ''
+      end
     end
   end
 end

@@ -4,7 +4,7 @@ module KBuilder
   module Dotnet
     # Denormalized view of dot net code including use namespaces and
     # nuget/project dependencies that would be needed for a single line of code.
-    class DotNetSnippets
+    class Snippets
       attr_accessor :code_blocks
       attr_accessor :use_namespaces
 
@@ -18,11 +18,10 @@ module KBuilder
         # @references = dependencies.select { |d| d.type == :reference }.uniq
       end
 
-      attr_accessor :packages
-      attr_accessor :references
+      # attr_accessor :packages
+      # attr_accessor :references
 
-      def get_dependencies
-      end
+      # def get_dependencies; end
     end
   end
 end
