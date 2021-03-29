@@ -19,6 +19,7 @@ module KBuilder
         @name = name
         @type = type
 
+        raise KBuilder::Dotnet::Error, 'Name is required' if (name.nil? || name.to_s == '')
         raise KBuilder::Dotnet::Error, 'Unknown dependency type. Valid types: [:nuget, :reference]' unless VALID_TYPES.include?(type)
       end
     end
