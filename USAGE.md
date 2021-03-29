@@ -8,12 +8,33 @@ As a C# Developer, I want to generate dotnet code, projects and solutions quickl
 
 ### Sample Classes
 
-#### Simple example
+#### Create solution
 
-Description for a simple example that shows up in the USAGE.MD
+Create a new solution that contains many projects to solve a business problem.
 
 ```ruby
-class SomeRuby
-  def initialize; end
-end
+solution = builder.new_solution(:pitstop)
 ```
+
+![](docs/new-solution.png)
+
+#### Create project(s)
+
+Create two projects attached to the solution
+
+![Build Two Projects](docs/builder-two-projects.png)
+
+<table>
+<tr>
+<td>
+
+![New Project 1](docs/new-project1.png)
+
+</td>
+<td>
+
+![New Project 2](docs/new-project2.png)
+
+</td>
+</tr>
+</table>
