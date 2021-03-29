@@ -1,12 +1,14 @@
 # frozen_string_literal: true
 
 require 'k_builder/dotnet/version'
+require 'k_builder/dotnet/code_block'
+require 'k_builder/dotnet/dependency'
+require 'k_builder/dotnet/namespace'
+require 'k_builder/dotnet/snippets'
 
 module KBuilder
   module Dotnet
     # raise KBuilder::Dotnet::Error, 'Sample message'
     class Error < StandardError; end
-
-    # Your code goes here...
   end
 end
