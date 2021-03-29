@@ -36,13 +36,19 @@ See all [usage examples](./USAGE.md)
 
 ### Basic Example
 
-#### Basic example
+#### Create solution
 
-Description for a basic example to be featured in the main README.MD file
+Create a new solution that contains many projects to solve a business problem.
 
 ```ruby
-class SomeRuby; end
+solution = builder.new_solution(:pitstop)
 ```
+
+#### Create project(s)
+
+Create two projects attached to the solution
+
+![Build Two Projects](docs/builder-two-projects.png)
 
 ## Development
 
