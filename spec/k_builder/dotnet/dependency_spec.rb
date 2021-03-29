@@ -7,14 +7,13 @@ RSpec.describe KBuilder::Dotnet::Dependency do
 
   describe 'Initialize' do
     context 'with invalid name' do
-
       context 'nil' do
         let(:name) { nil }
-        it { expect { subject }.to raise_error(KBuilder::Dotnet::Error, 'Name is required')}
+        it { expect { subject }.to raise_error(KBuilder::Dotnet::Error, 'Name is required') }
       end
       context 'blank' do
         let(:name) { '' }
-        it { expect { subject }.to raise_error(KBuilder::Dotnet::Error, 'Name is required')}
+        it { expect { subject }.to raise_error(KBuilder::Dotnet::Error, 'Name is required') }
       end
     end
 
@@ -42,7 +41,7 @@ RSpec.describe KBuilder::Dotnet::Dependency do
         context 'when given an invalid type' do
           let(:type) { :xyz }
 
-          it { expect { subject }.to raise_error(KBuilder::Dotnet::Error, 'Unknown dependency type. Valid types: [:nuget, :reference]')}
+          it { expect { subject }.to raise_error(KBuilder::Dotnet::Error, 'Unknown dependency type. Valid types: [:nuget, :reference]') }
         end
       end
     end
