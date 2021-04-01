@@ -2,9 +2,9 @@
 
 require 'k_builder/dotnet/version'
 require 'k_builder/dotnet/code_block'
+require 'k_builder/dotnet/code_snippets'
 require 'k_builder/dotnet/dependency'
 require 'k_builder/dotnet/namespace'
-require 'k_builder/dotnet/snippets'
 
 module KBuilder
   module Dotnet
@@ -12,3 +12,5 @@ module KBuilder
     class Error < StandardError; end
   end
 end
+
+puts "KBuilder::Dotnet::Version: #{KBuilder::Dotnet::VERSION}" if ENV['KLUE_DEBUG']&.to_s&.downcase == 'true'
