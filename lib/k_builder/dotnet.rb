@@ -13,4 +13,9 @@ module KBuilder
   end
 end
 
-puts "KBuilder::Dotnet::Version: #{KBuilder::Dotnet::VERSION}" if ENV['KLUE_DEBUG']&.to_s&.downcase == 'true'
+if ENV['KLUE_DEBUG']&.to_s&.downcase == 'true'
+  namespace = 'KBuilder::Dotnet::Version'
+  file_path = $LOADED_FEATURES.find { |f| f.include?('k_builder/dotnet/version') }
+  version   = KBuilder::Dotnet::VERSION.ljust(9)
+  puts "#{namespace.ljust(35)} : #{version.ljust(9)} : #{file_path}"
+end
