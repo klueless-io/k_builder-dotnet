@@ -6,6 +6,11 @@ require 'k_builder/dotnet/code_snippets'
 require 'k_builder/dotnet/dependency'
 require 'k_builder/dotnet/namespace'
 
+# dotnet add package Selenium.WebDriver
+# dotnet add package Selenium.WebDriver.ChromeDriver
+# mkdir ClubMembership.Web.UI   && cd ClubMembership.Web.UI   && dotnet new mstest -n ClubMembership.Web.UI -o .    && cd ..
+# mkdir ClubMembership.Web.Unit && cd ClubMembership.Web.Unit && dotnet new mstest -n ClubMembership.Web.Unit -o .  && cd ..
+
 module KBuilder
   module Dotnet
     # raise KBuilder::Dotnet::Error, 'Sample message'
