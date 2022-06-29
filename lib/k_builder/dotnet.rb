@@ -18,7 +18,7 @@ module KBuilder
   end
 end
 
-if ENV['KLUE_DEBUG']&.to_s&.downcase == 'true'
+if ENV.fetch('KLUE_DEBUG', 'false').downcase == 'true'
   namespace = 'KBuilder::Dotnet::Version'
   file_path = $LOADED_FEATURES.find { |f| f.include?('k_builder/dotnet/version') }
   version   = KBuilder::Dotnet::VERSION.ljust(9)
